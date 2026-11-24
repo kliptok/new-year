@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Моя ёлка — 12 ёлочных игрушек до Нового года</title>
+  <link rel="icon" type="image/png" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">АВАТАРСКИЙ KLIPTOK<span>★</span></a>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="rules.html">Правила</a>
+    <a href="cabinet.html">Личный кабинет</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="panel tree-page">
+    <div class="eyebrow">HOLIDAY COLLECTION</div>
+    <h1>МОЯ ЁЛКА</h1>
+    <p class="lead">Выбирай любую игрушку. Задания можно выполнять в любом порядке.</p>
+
+    <div class="tree-layout">
+      <aside class="tree-player">
+        <span>PLAYER</span>
+        <b id="tree-player">—</b>
+        <div class="tree-count" id="tree-counter">0/12</div>
+        <small>ИГРУШЕК СОБРАНО</small>
+      </aside>
+
+      <div class="tree-scene tree-scene-art" aria-label="Интерактивная новогодняя ёлка с 12 игрушками">
+        <img
+          class="tree-art"
+          src="assets/kliptokovo-tree.svg"
+          alt="Пышная украшенная новогодняя ёлка"
+        >
+
+        <div class="tree-hotspots">
+          <button class="ornament hotspot h1" data-task="1" aria-label="Открыть задание 1"></button>
+          <button class="ornament hotspot h2" data-task="2" aria-label="Открыть задание 2"></button>
+          <button class="ornament hotspot h3" data-task="3" aria-label="Открыть задание 3"></button>
+          <button class="ornament hotspot h4" data-task="4" aria-label="Открыть задание 4"></button>
+          <button class="ornament hotspot h5" data-task="5" aria-label="Открыть задание 5"></button>
+          <button class="ornament hotspot h6" data-task="6" aria-label="Открыть задание 6"></button>
+          <button class="ornament hotspot h7" data-task="7" aria-label="Открыть задание 7"></button>
+          <button class="ornament hotspot h8" data-task="8" aria-label="Открыть задание 8"></button>
+          <button class="ornament hotspot h9" data-task="9" aria-label="Открыть задание 9"></button>
+          <button class="ornament hotspot h10" data-task="10" aria-label="Открыть задание 10"></button>
+          <button class="ornament hotspot h11" data-task="11" aria-label="Открыть задание 11"></button>
+          <button class="ornament hotspot h12" data-task="12" aria-label="Открыть задание 12"></button>
+        </div>
+      </div>
+    </div>
+    </section>
+</main>
+<footer>KLIPTOK · БУДЬ В ТРЕНДЕ!</footer>
+<div class="modal" id="task-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="task-title">
+  <div class="modal-window">
+    <button class="modal-close" id="task-close" aria-label="Закрыть">×</button>
+    <div class="mission-number" id="task-number">MISSION 01</div>
+    <div class="task-toy" id="task-toy">1</div>
+    <h2 id="task-title">Задание</h2>
+    <p class="task-description" id="task-text">Описание задания</p>
+    <div class="task-condition"><small>УСЛОВИЯ</small><p id="task-condition"></p></div>
+    <div class="task-deadline"><span>ДЕДЛАЙН</span><b id="task-deadline"></b></div>
+    <div class="task-status-box"><small>СТАТУС</small><strong id="task-status">Не отправлено</strong></div>
+    <button class="button primary" id="task-ok">ПОНЯТНО</button>
+  </div>
+</div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
